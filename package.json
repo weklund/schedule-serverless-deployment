@@ -1,0 +1,19 @@
+{
+  "name": "schedule-serverless-build-deployment",
+  "version": "1.0.0",
+  "description": "Merge specified branches that kick off automated deployments on defined schedule from Cloudwatch Events",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/rimraf ./temp/ && ./node_modules/.bin/nodenv index.js"
+  },
+  "author": "Wes Eklund",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "lambda-git": "^0.1.2",
+    "rimraf": "^2.6.3",
+    "simple-git": "^1.112.0"
+  },
+  "devDependencies": {
+    "node-env-run": "^3.0.2"
+  }
+}
